@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+  </head>
+  <body>
+    <main>
+      <div class="preview">
+        <img id="star" src="./images/icon-star.svg" alt="" />
+
+        <h3>How did we do?</h3>
+        <p class="preview-paragraph">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <div class="rating">
+          <button class="numbers">1</button>
+          <button class="numbers">2</button>
+          <button class="numbers">3</button>
+          <button class="numbers">4</button>
+          <button class="numbers">5</button>
+        </div>
+        <button class="submit-preview">SUBMIT</button>
+      </div>
+
+      <div class="thank-you hidden">
+        <img
+          class="img-thank-you"
+          src="./images/illustration-thank-you.svg"
+          alt="illustration-thank-you"
+        />
+        <p class="selection-result"></p>
+        <h3>Thank you!</h3>
+        <p class="thank-you-paragraph">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don´t hesitate to get in touch!
+        </p>
+        <button class="submit-rate-again">Rate Again</button>
+      </div>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Sebastián Heinken</a>.
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

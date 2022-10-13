@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Overpass', sans-serif;
+}
+
+:root {
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: rgb(49, 60, 70);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+
+main {
+    height: 100vh;
+    background-color: var(--Very-Dark-Blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.preview{
+    background-color: var(--Dark-Blue);
+    padding: 12px;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border-radius: 24px;
+}
+
+
+#star {
+    padding: 12px;
+    background-color: var(--Medium-Grey);
+    border-radius: 50%;
+    width: 40px;
+}
+
+h3 {
+    color: var(--White);
+    font-size: 1.6rem;
+    font-weight: bolder;
+}
+
+.preview-paragraph, .thank-you-paragraph {
+    color: var(--Light-Grey);
+    font-size: 12px;
+}
+
+.rating {
+    display: flex;
+    justify-content: space-around;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.numbers {
+    border: none;
+    background-color: var(--Medium-Grey);
+    width: 40px;
+    border-radius: 50%;
+    padding: 10px;
+    color: var(--Light-Grey);
+}
+
+.numbers:hover {
+    cursor: pointer;
+    background-color: var(--Light-Grey);
+    color: var(--White);
+}
+
+.numbers:focus{
+    background-color: var(--Orange);
+    color: var(--White);
+    cursor: pointer;
+}
+
+.submit-preview, .submit-rate-again {
+    border: none;
+    background-color: var(--Orange);
+    color: var(--White);
+    font-size: 0.7rem;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 30px;
+}
+
+
+.submit-preview:hover, .submit-rate-again:hover {
+    cursor: pointer;
+    background-color: var(--White);
+    color: var(--Orange);
+} 
+
+/* thank you */
+
+
+
+.thank-you {
+    background-color: var(--Dark-Blue);
+    padding: 12px;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 24px;
+}
+
+.img-thank-you {
+    width: 120px;
+}
+
+.selection-result {
+    background-color: var(--Medium-Grey);
+    color: var(--Orange);
+    font-size: 0.8rem;
+    padding: 6px 18px;
+    border-radius: 18px;
+}
+
+.thank-you-paragraph {
+    padding: 0px 12px;
+    text-align: center;
+}
+
+.submit-rate-again {
+    width: 140px;
+}
+
+.hidden {
+    display: none;
+}
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
